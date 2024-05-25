@@ -1,24 +1,30 @@
 .text-container {
-  position: absolute;
-  top: 60%;
-  left: 48%;
-  transform: translate(-50%, -50%);
-  width: 55vw;
+  width: 65vw;
   height: 60vh;
+  // border: 2px solid white;
   border-radius: 25px;
 
   .title {
     font-family: "PP Mori";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // border: 2px solid white;
 
     .title-text {
+      font-size: 42px;
       color: var(--alternate-color);
       line-height: 1.1;
       text-align: left;
-      letter-spacing: -1.5px;
+      letter-spacing: -1px;
       text-shadow: 0 5px 10px rgba(255, 255, 255, 0.1),
         0 -5px 10px rgba(197, 197, 197, 0.12),
         0 -5px 25px rgba(255, 255, 255, 0.15);
       font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       // Extra Large Desktop
       @media screen and (min-width: 1440px) and (max-width: 2560px) {
@@ -27,46 +33,46 @@
 
       // Large Laptop
       @media screen and (min-width: 1236px) and (max-width: 1440px) {
-        font-size: 150px;
+        font-size: 42px;
       }
 
       // Medium Laptop
-      @media screen and (min-width: 1132px) and (max-width: 1236px) {
-        font-size: 145px;
+      @media screen and (min-width: 1138px) and (max-width: 1236px) {
+        font-size: 40px;
       }
 
       // Small Laptop
-      @media screen and (min-width: 1056px) and (max-width: 1132px) {
-        font-size: 136px;
+      @media screen and (min-width: 1078px) and (max-width: 1138px) {
+        font-size: 38px;
       }
 
       // Smaller Laptop
-      @media screen and (min-width: 968px) and (max-width: 1056px) {
-        font-size: 120px;
+      @media screen and (min-width: 968px) and (max-width: 1078px) {
+        font-size: 34px;
       }
 
       // Large Tablet
       @media screen and (min-width: 812px) and (max-width: 968px) {
-        font-size: 106px;
+        font-size: 33px;
       }
 
       // Tablets
       @media screen and (min-width: 708px) and (max-width: 812px) {
-        font-size: 94px;
+        font-size: 42px;
       }
 
       // Small Tablets
       @media screen and (min-width: 568px) and (max-width: 708px) {
-        font-size: 76px;
+        font-size: 42px;
       }
 
       // Smaller Tablets
       @media screen and (min-width: 528px) and (max-width: 568px) {
-        font-size: 70px;
+        font-size: 42px;
       }
 
       @media screen and (min-width: 456px) and (max-width: 528px) {
-        font-size: 62px;
+        font-size: 42px;
       }
 
       // Large Phones

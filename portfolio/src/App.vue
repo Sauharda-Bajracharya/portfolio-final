@@ -1,6 +1,6 @@
 <template>
   <div class="cursor"></div>
-  <!-- <Hero-section /> -->
+  <Hero-section />
   <Os-hero />
   <Navbar />
   <Projects />
@@ -10,7 +10,7 @@
 import HeroSection from "./components/hero-section.vue";
 import OsHero from "./components/os-hero.vue";
 import Navbar from "./components/navbar.vue";
-import Projects from "./components/projects.vue";
+import Projects from "./pages/projects.vue";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import Lenis from "lenis";
@@ -68,7 +68,7 @@ gsap.ticker.add((time) => {
 gsap.ticker.lagSmoothing(0);
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .cursor {
   width: 10px;
   height: 10px;

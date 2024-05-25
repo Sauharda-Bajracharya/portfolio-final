@@ -3,7 +3,7 @@
   <div class="mobile-resp-container">
     <span class="mobile-resp-title">
       <h1>Sauharda Bajracharya</h1>
-      <span class="undertext">Front-End Developer</span>
+      <span class="undertext">Front-End Developer // UX/UI Designer</span>
     </span>
   </div>
 
@@ -42,11 +42,12 @@
 </template>
 
 <script>
-import "../styles/archived.css";
+// import "../styles/archived.css";
 </script>
 
 <style scoped lang="scss">
 .window-container {
+  display: none;
   position: absolute;
   top: 55%;
   left: 50%;
@@ -202,7 +203,7 @@ import "../styles/archived.css";
 .mobile-resp-container {
   display: none;
 
-  @media screen and (max-width: 456px) {
+  @media screen and (max-width: 568px) {
     display: flex;
     width: 100%;
     height: 400px;
@@ -219,6 +220,7 @@ import "../styles/archived.css";
 
       h1 {
         background-image: -webkit-linear-gradient(56deg, #f0f0f0, #b2b2b2);
+        -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: hue 2s infinite linear;
@@ -247,7 +249,8 @@ import "../styles/archived.css";
         font-size: 18px;
         font-weight: 400;
         position: absolute;
-        margin-top: 2px;
+        margin-top: 4px;
+        line-height: 1.3rem;
 
         @media screen and (max-width: 452px) {
           font-size: 16px;

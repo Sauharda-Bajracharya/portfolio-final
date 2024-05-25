@@ -18,6 +18,5 @@
   width: 100%;
   height: 50vh;
   background-color: var(--primary-color);
-  /* box-shadow: 0 0 50px rgba(10, 10, 10, 0.1); */
 }
 </style>
