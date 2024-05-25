@@ -219,13 +219,13 @@ import "../styles/archived.css";
 
       h1 {
         background-image: -webkit-linear-gradient(56deg, #f0f0f0, #b2b2b2);
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
-        -webkit-animation: hue 2s infinite linear;
+        animation: hue 2s infinite linear;
         letter-spacing: 0.8px;
 
         @media screen and (max-width: 568px) {
-          font-size: 36px;
+          font-size: 26px;
         }
 
         @media screen and (max-width: 452px) {
