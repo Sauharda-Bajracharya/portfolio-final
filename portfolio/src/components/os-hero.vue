@@ -7,6 +7,7 @@
     </span>
   </div>
 
+  <!-- ARCHIVED -->
   <div class="window-container">
     <div class="double-border">
       <div class="main-window">
@@ -39,12 +40,14 @@
       </div>
     </div>
   </div>
+  <!-- ARCHIVED -->
 </template>
 
 <script>
-// import "../styles/archived.css";
+export default {
+  name: "os-hero",
+};
 </script>
-
 <style scoped lang="scss">
 .window-container {
   display: none;

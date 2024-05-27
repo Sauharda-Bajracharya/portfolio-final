@@ -4,6 +4,7 @@
   <Os-hero />
   <Navbar />
   <Projects />
+  <FooterComponent />
 </template>
 
 <script>
@@ -11,6 +12,7 @@ import HeroSection from "./components/hero-section.vue";
 import OsHero from "./components/os-hero.vue";
 import Navbar from "./components/navbar.vue";
 import Projects from "./pages/projects.vue";
+import FooterComponent from "./components/footer.vue";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import Lenis from "lenis";
@@ -22,6 +24,7 @@ export default {
     OsHero,
     Navbar,
     Projects,
+    FooterComponent,
   },
   data() {
     return {

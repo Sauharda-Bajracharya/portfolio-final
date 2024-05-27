@@ -14,7 +14,7 @@
         <div class="nav-active-indicator" :class="activeIndicatorClass"></div>
         <div class="nav-pill">
           <a
-            href="#projects"
+            href="#"
             class="nav-link"
             :class="{ active: activeLink === 'projects' }"
             @click="setActive('projects')"
