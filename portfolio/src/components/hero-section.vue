@@ -82,7 +82,7 @@ export default {
       0 -5px 10px rgba(197, 197, 197, 0.18),
       0 -5px 25px rgba(255, 255, 255, 0.24);
     font-size: 7.5vw;
-    line-height: 1.15;
+    line-height: 1.1;
 
     &::first-letter {
       text-transform: uppercase;
@@ -95,7 +95,10 @@ export default {
 
   @media (max-width: 382px) {
     font-size: 7vw;
-    // font-size: 20.5008px;
+  }
+
+  @media (max-width: 328px) {
+    font-size: 6.8vw;
   }
 }
 
