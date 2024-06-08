@@ -1,9 +1,8 @@
 <template>
   <div class="cursor"></div>
-  <Hero-section />
-  <Os-hero />
+
   <Navbar />
-  <Projects />
+  <RouterView />
   <FooterComponent />
 </template>
 

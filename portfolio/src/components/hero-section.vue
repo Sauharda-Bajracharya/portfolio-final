@@ -93,11 +93,15 @@ export default {
     font-size: 7.4vw;
   }
 
-  @media (max-width: 382px) {
-    font-size: 7vw;
+  @media (max-width: 403px) {
+    font-size: 7.3vw;
   }
 
-  @media (max-width: 328px) {
+  @media (max-width: 382px) {
+    font-size: 7.1vw;
+  }
+
+  @media (max-width: 342px) {
     font-size: 6.8vw;
   }
 }

@@ -13,7 +13,7 @@
     "lenis": "^1.0.45",
     "vue": "^3.4.21",
     "vue-burger-menu": "^2.0.5",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

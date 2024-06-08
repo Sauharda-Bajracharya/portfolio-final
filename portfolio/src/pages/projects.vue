@@ -1,4 +1,6 @@
 <template>
+  <Hero-section />
+  <Os-hero />
   <div class="projects-container" id="projects">
     <div class="projects-main">
       <div class="projects-header">
@@ -58,16 +60,29 @@
   </div>
 </template>
 
+<script>
+import HeroSection from "../components/hero-section.vue";
+import OsHero from "../components/os-hero.vue";
+
+export default {
+  name: "Projects",
+
+  components: {
+    HeroSection,
+    OsHero,
+  },
+};
+</script>
+
 <style scoped lang="scss">
 .projects-container {
   width: 100%;
-  height: 350vh;
+  height: auto;
   background: var(--primary-color);
   border-top: 2px solid #2b2b2b;
   margin: 0;
 
   @media screen and (max-width: 768px) {
-    height: auto;
     padding: 20px 0;
   }
 
@@ -113,6 +128,7 @@
         font-size: 1.125rem;
         margin-left: 10vw;
         margin-top: 10px;
+        font-weight: 500;
       }
     }
 
@@ -142,7 +158,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding: 0.25rem;
+          padding: 0.15rem;
           outline: 2px solid #2b2b2b;
           overflow: hidden;
 
@@ -182,12 +198,11 @@
         color: var(--alternate-color);
         line-height: 1.1;
         font-size: 1.5rem;
-        font-weight: 500;
+        font-weight: normal;
         letter-spacing: 0;
         text-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
         align-self: flex-start;
         margin-top: 1.75rem;
-        text-decoration: underline var(--primary-color);
 
         @media screen and (min-width: 968px) and (max-width: 1196px) {
           font-size: 2vw;
@@ -205,6 +220,10 @@
         @media screen and (max-width: 568px) {
           font-size: 3vw;
         }
+
+        @media screen and (max-width: 468px) {
+          font-size: 3.25vw;
+        }
       }
 
       .title-desc {
@@ -215,7 +234,6 @@
         font-size: 1.125rem;
         letter-spacing: 0.25px;
         align-self: flex-start;
-        text-decoration: underline var(--primary-color);
         margin-bottom: 80px;
 
         @media screen and (min-width: 968px) and (max-width: 1196px) {
@@ -235,8 +253,16 @@
           font-size: 2.5vw;
           margin-bottom: 60px;
         }
+
+        @media screen and (max-width: 468px) {
+          font-size: 2.75vw;
+        }
       }
     }
   }
+}
+
+a {
+  text-decoration: none;
 }
 </style>

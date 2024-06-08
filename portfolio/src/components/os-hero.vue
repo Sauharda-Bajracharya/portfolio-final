@@ -269,5 +269,13 @@ export default {
       }
     }
   }
+
+  @media screen and (max-width: 438px) {
+    height: 370px;
+  }
+
+  @media screen and (max-width: 328px) {
+    height: 340px;
+  }
 }
 </style>

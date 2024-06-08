@@ -13,22 +13,22 @@
       <div class="nav-mid">
         <div class="nav-active-indicator" :class="activeIndicatorClass"></div>
         <div class="nav-pill">
-          <a
-            href="#"
+          <router-link
+            to="/"
             class="nav-link"
             :class="{ active: activeLink === 'projects' }"
-            @click="setActive('projects')"
+            @click.native="setActive('projects')"
           >
             <span class="projects">Projects</span>
-          </a>
-          <a
-            href="#about"
+          </router-link>
+          <router-link
+            to="/about"
             class="nav-link"
             :class="{ active: activeLink === 'about' }"
-            @click="setActive('about')"
+            @click.native="setActive('about')"
           >
             <span class="about">About</span>
-          </a>
+          </router-link>
         </div>
       </div>
       <div class="nav-right">
@@ -67,13 +67,13 @@
           </span>
         </div>
         <div class="nav-socials">
-          <a href="#contact" class="nav-social-link">
+          <router-link to="/contact" class="nav-social-link">
             <span class="contact">Contact</span>
             <img
               src="https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/63e0b50ea0956f4526968ef1_23-icon-external.svg"
               alt="->"
             />
-          </a>
+          </router-link>
           <a
             href="https://www.linkedin.com/in/sauharda-bajracharya-2026872b6/"
             target="_blank"
@@ -90,13 +90,13 @@
     </div>
     <div v-if="menuActive" class="mobile-nav">
       <div class="mobile-nav-pill">
-        <a href="#contact" class="mobile-link">
+        <router-link to="/contact" class="mobile-link">
           <span class="contact">Contact &nbsp;&nbsp;</span>
           <img
             src="https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/63e0b50ea0956f4526968ef1_23-icon-external.svg"
             alt="->"
           />
-        </a>
+        </router-link>
         <a
           href="https://www.linkedin.com/in/sauharda-bajracharya-2026872b6/"
           target="_blank"
