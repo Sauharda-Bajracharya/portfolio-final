@@ -1,8 +1,6 @@
-// src/router/index.ts
 import { createRouter, createWebHistory } from "vue-router";
 import Projects from "../pages/projects.vue";
 import About from "../pages/about.vue";
-import Contact from "../pages/contact.vue";
 
 const routes = [
   {
@@ -14,11 +12,6 @@ const routes = [
     path: "/about",
     name: "About",
     component: About,
-  },
-  {
-    path: "/contact",
-    name: "Contact",
-    component: Contact,
   },
 ];
 

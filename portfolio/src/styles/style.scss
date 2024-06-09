@@ -13,4 +13,9 @@
 
 body {
   background-color: var(--primary-color);
+
+  ::selection {
+    background-color: #0047ab;
+    color: var(--primary-color);
+  }
 }

@@ -1,6 +1,5 @@
 <template>
   <div class="cursor"></div>
-
   <Navbar />
   <RouterView />
   <FooterComponent />

@@ -38,7 +38,10 @@
     </div>
     <!-- Mail -->
 
-    <a href="mailto:4fLp8@example.com" class="mail" target="_blank"
+    <a
+      href="mailto:sauharda.bajracharya12@gmail.com"
+      class="mail"
+      target="_blank"
       >sauharda.bajracharya12@gmail.com</a
     >
     <span class="copyright">&copy; 2024 Sauharda Bajracharya</span>

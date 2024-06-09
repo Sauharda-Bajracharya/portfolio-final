@@ -67,13 +67,17 @@
           </span>
         </div>
         <div class="nav-socials">
-          <router-link to="/contact" class="nav-social-link">
+          <a
+            href="mailto:sauharda.bajracharya12@gmail.com"
+            target="_blank"
+            class="nav-social-link"
+          >
             <span class="contact">Contact</span>
             <img
               src="https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/63e0b50ea0956f4526968ef1_23-icon-external.svg"
               alt="->"
             />
-          </router-link>
+          </a>
           <a
             href="https://www.linkedin.com/in/sauharda-bajracharya-2026872b6/"
             target="_blank"
@@ -90,13 +94,17 @@
     </div>
     <div v-if="menuActive" class="mobile-nav">
       <div class="mobile-nav-pill">
-        <router-link to="/contact" class="mobile-link">
+        <a
+          href="mailto:sauharda.bajracharya12@gmail.com"
+          target="_blank"
+          class="mobile-link"
+        >
           <span class="contact">Contact &nbsp;&nbsp;</span>
           <img
             src="https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/63e0b50ea0956f4526968ef1_23-icon-external.svg"
             alt="->"
           />
-        </router-link>
+        </a>
         <a
           href="https://www.linkedin.com/in/sauharda-bajracharya-2026872b6/"
           target="_blank"
@@ -130,10 +138,22 @@ export default {
       };
     },
   },
+  watch: {
+    $route(to) {
+      this.setActiveByRoute(to.path);
+    },
+  },
   methods: {
     setActive(link: string) {
       this.activeLink = link;
       this.menuActive = false;
+    },
+    setActiveByRoute(path: string) {
+      if (path.includes("/about")) {
+        this.activeLink = "about";
+      } else {
+        this.activeLink = "projects";
+      }
     },
     toggleMenu() {
       setTimeout(() => {
@@ -141,6 +161,9 @@ export default {
         this.isRotated = !this.isRotated;
       }, 120);
     },
+  },
+  created() {
+    this.setActiveByRoute(this.$route.path);
   },
 };
 </script>
