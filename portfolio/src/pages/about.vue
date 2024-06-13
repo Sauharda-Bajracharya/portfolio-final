@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="about">
     <h1>About</h1>
     <p>This is the About page.</p>
   </div>
@@ -12,5 +12,11 @@ export default {
 </script>
 
 <style scoped>
-/* Add any styles needed for your About page */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 </style>

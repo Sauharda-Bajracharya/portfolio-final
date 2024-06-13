@@ -17,7 +17,7 @@
             to="/"
             class="nav-link"
             :class="{ active: activeLink === 'projects' }"
-            @click.native="setActive('projects')"
+            @click.native="setActive('projects'), scrollToTop()"
           >
             <span class="projects">Projects</span>
           </router-link>
@@ -25,7 +25,7 @@
             to="/about"
             class="nav-link"
             :class="{ active: activeLink === 'about' }"
-            @click.native="setActive('about')"
+            @click.native="setActive('about'), scrollToTop()"
           >
             <span class="about">About</span>
           </router-link>
@@ -160,6 +160,9 @@ export default {
         this.menuActive = !this.menuActive;
         this.isRotated = !this.isRotated;
       }, 120);
+    },
+    scrollToTop() {
+      window.scrollTo(0, 0);
     },
   },
   created() {

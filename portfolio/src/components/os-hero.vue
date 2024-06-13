@@ -35,11 +35,12 @@
               </div>
             </div>
           </div>
+          <!-- Content End -->
         </div>
-        <!-- Content End -->
       </div>
     </div>
   </div>
+
   <!-- ARCHIVED -->
 </template>
 

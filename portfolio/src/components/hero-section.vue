@@ -43,6 +43,7 @@ export default {
   align-items: center;
   height: 100vh;
   font-family: "PP Mori";
+  text-decoration: none;
 
   @media (max-width: 568px) {
     display: block;
@@ -164,6 +165,13 @@ export default {
 .bruh {
   @media (max-width: 568px) {
     display: none;
+  }
+
+  .about-button {
+    align-items: flex-start !important;
+    .about-text {
+      align-items: flex-start !important;
+    }
   }
 }
 </style>
