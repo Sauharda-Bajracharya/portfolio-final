@@ -14,9 +14,6 @@
         Websites & Webapps.
       </span>
     </div>
-    <a href="#projects" class="arrow-down" @click.prevent="scrollToProjects">
-      ↓
-    </a>
   </div>
 </template>
 
@@ -27,11 +24,7 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollToPlugin);
 
 export default {
-  methods: {
-    scrollToProjects() {
-      gsap.to(window, { duration: 0.5, scrollTo: "#projects" });
-    },
-  },
+  name: "HeroSection",
 };
 </script>
 

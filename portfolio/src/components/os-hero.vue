@@ -8,7 +8,7 @@
   </div>
 
   <!-- ARCHIVED -->
-  <div class="window-container">
+  <!-- <div class="window-container">
     <div class="double-border">
       <div class="main-window">
         <div class="window-bar">
@@ -17,12 +17,12 @@
             <span class="button minimize"></span>
             <span class="button restore"></span>
           </div>
-        </div>
-        <!-- Content Start -->
-        <div class="window-content">
-          <div class="hero-section">
-            <!-- Main Hero Section -->
-            <div class="text-container">
+        </div> -->
+  <!-- Content Start -->
+  <!-- <div class="window-content">
+          <div class="hero-section"> -->
+  <!-- Main Hero Section -->
+  <!-- <div class="text-container">
               <div class="title">
                 <span class="title-text">
                   Creating and Delivering
@@ -34,12 +34,12 @@
                 </span>
               </div>
             </div>
-          </div>
-          <!-- Content End -->
-        </div>
+          </div> -->
+  <!-- Content End -->
+  <!-- </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- ARCHIVED -->
 </template>

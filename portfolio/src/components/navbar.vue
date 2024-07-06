@@ -6,7 +6,7 @@
           <img class="logo" src="../assets/new.png" alt="logo" />
           <div class="logo-text">
             <h1>Sauharda Bajracharya</h1>
-            <span>Front-End Developer</span>
+            <span>Interactive Developer</span>
           </div>
         </div>
       </div>
@@ -273,7 +273,7 @@ export default {
         color: rgba(255, 255, 255, 0.7);
         font-size: 13px;
         line-height: 13px;
-        letter-spacing: 0.2px;
+        letter-spacing: 0.4px;
         font-weight: 200;
         margin-top: -4px;
 
